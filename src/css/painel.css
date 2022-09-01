@@ -1,0 +1,70 @@
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+
+.conteudo-principal .paineis .imagem-painel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.conteudo-principal .paineis .imagem-painel.selecionado{
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .projeto1{
+    background-image: url(../image/painel1.jpg);
+}
+
+.conteudo-principal .paineis .projeto2{
+    background-image: url(../image/painel2.jpg);
+}
+
+.conteudo-principal .paineis .projeto3{
+    background-image: url(../image/painel3.jpg);
+}
+
+.conteudo-principal .paineis .titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+}
+
+.conteudo-principal .paineis .seta{
+    background-image: url(../image/seta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar{
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar{
+    right: 20px;
+}
+
+.seta:hover {
+    background-color: #8351FE;
+}
